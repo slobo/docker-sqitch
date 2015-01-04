@@ -5,4 +5,4 @@ RUN \
   && apt-get install -y libdbd-pg-perl postgresql-client libpq-dev
 
 RUN \
-  cpan App::Sqitch
+  cpan App::Sqitch DBD::Pg

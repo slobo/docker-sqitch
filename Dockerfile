@@ -5,4 +5,4 @@ RUN \
   && apt-get install -y libdbd-pg-perl postgresql-client libpq-dev zsh
 
 RUN \
-  cpanm App::Sqitch DBD::Pg Template
+  cpanm -v DBD::Pg Template App::Sqitch

@@ -8,4 +8,6 @@ RUN \
     zsh
 
 RUN \
-  cpanm -v DBD::Pg DBD::mysql Template DWHEELER/App-Sqitch-0.9995.tar.gz
+  cpanm -v -n DBD::Pg DBD::mysql Template DWHEELER/App-Sqitch-0.9995.tar.gz \
+  && rm -rf /root/.cpanm
+

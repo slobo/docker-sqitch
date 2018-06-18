@@ -1,4 +1,4 @@
-FROM slobo/carton:5.20.2-1.0.19
+FROM perl:5.22.4
 
 RUN \
   apt-get update \
@@ -9,6 +9,6 @@ RUN \
     pv
 
 RUN \
-  cpanm -v -n DBD::Pg DBD::mysql Template DWHEELER/App-Sqitch-0.9995.tar.gz \
+  cpanm -v -n DBD::Pg DBD::mysql Template DWHEELER/App-Sqitch-0.9997.tar.gz \
   && rm -rf /root/.cpanm
 
